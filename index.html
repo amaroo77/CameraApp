@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Camera App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Camera App</h1>
+  <video id="video" autoplay playsinline></video>
+  <canvas id="canvas" style="display: none;"></canvas>
+
+  <div class="buttons">
+    <button id="startCamera">Start Camera</button>
+    <button id="capturePhoto">Capture Photo</button>
+    <a id="downloadPhoto" download="photo.png">Download Photo</a>
+
+    <button id="startRecord">Start Recording</button>
+    <button id="stopRecord" disabled>Stop Recording</button>
+    <a id="downloadVideo" download="video.webm">Download Video</a>
+  </div>
+
+  <h2>Recorded Video Preview:</h2>
+  <video id="recordedVideo" controls style="display: none;"></video>
+  <div id="flash" class="flash"></div>
+  <div id="recordingIndicator" class="recording-indicator">● Recording...</div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
